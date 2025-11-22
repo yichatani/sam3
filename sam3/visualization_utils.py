@@ -206,6 +206,7 @@ def visualize_formatted_frame_output(
     frame_idx,
     video_frames,
     outputs_list,
+    output_dir,
     titles=None,
     points_list=None,
     points_labels_list=None,
@@ -383,6 +384,7 @@ def visualize_formatted_frame_output(
 
     plt.tight_layout()
     plt.show()
+    plt.savefig(output_dir + f'/{frame_idx}.png')
 
 
 def render_masklet_frame(img, outputs, frame_idx=None, alpha=0.5):
