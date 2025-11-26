@@ -154,4 +154,5 @@ Thumbs.db
 
 
 output/
-assets/
+assets/*
+!assets/images/
